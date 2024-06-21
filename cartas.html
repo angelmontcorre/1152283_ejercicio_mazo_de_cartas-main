@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cartas.css">
+    <title>Showdown Contador de Cartas</title>
+</head>
+<body>
+    <header>
+        <img src="img/Showdown.png" alt="Logo de Showdown">
+    </header>
+    <main>
+        <div class="seccion_cartas">
+            <!-- Aquí puedes agregar el contenido relacionado con las cartas flotantes -->
+        </div> 
+
+        <div class="seccion_contador_registro">
+            <!-- Parte derecha: contador y registro de cartas -->
+            <div class="contador_cartas">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Carta</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCartas">
+                        <!-- Aquí se añadirán las filas dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="registro_cartas">
+                <form class="formulario" onsubmit="registrarCarta(); return false;">
+                    <h1 id="tituloform">Registro de Cartas</h1>
+                    <label for="numero">Número de Carta</label>
+                    <input type="number" id="numero" class="input-padron" required>
+                    <input type="submit" value="Guardar" class="btn_guardar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/cartas.js" defer></script>
+</body>
+</html>

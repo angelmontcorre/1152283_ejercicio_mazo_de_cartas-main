@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Login Showdown Contador de Cartas</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white-500 p-2 text-center">
+        <img src="img/Showdown.png" alt="Logo de Showdown" class="mx-auto max-w-3/4 h-auto">
+    </header>
+    <main class="max-w-md mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
+        <form class="login" onsubmit="validarLogin(); return false;">
+            <div class="text-center mb-4">
+                <h1 class="text-2xl font-semibold">Inicio de sesión</h1>
+            </div>
+            <div id="caja">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="user">Usuario</label>
+                    <input type="text" id="user" class="mt-1 p-2 w-full border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="pass">Contraseña</label>
+                    <input type="password" id="pass" class="mt-1 p-2 w-full border rounded-md" required>
+                </div>
+                <input type="submit" value="Ingresar" id="btn_ingresar" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">
+            </div>
+        </form>
+    </main>
+    <script src="js/index.js" defer></script>
+</body>
+</html>
